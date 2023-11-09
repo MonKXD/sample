@@ -1,0 +1,44 @@
+EXPERIMENT 9 
+AIM : Write a program to display name, roll no, gender, percentage of "N" students using structure
+
+CODE:
+
+#include <iostream>
+using namespace std;
+struct Student 
+{
+	string name;
+    	int rollNo;
+    	char gender;
+    	double percentage;
+};
+int main() 
+{
+    	int N;
+    	cout << "Enter the number of students: ";
+    	cin >> N;
+    	Student students[N];
+    	for (int i = 0; i < N; i++) 
+    	{
+        	cout << "Enter details for Student " << i + 1 << ":" << endl;
+        	cout << "Name: ";
+        	cin >> students[i].name;
+        	cout << "Roll No: ";
+        	cin >> students[i].rollNo;
+        	cout << "Gender (M/F): ";
+        	cin >> students[i].gender;
+        	cout << "Percentage: ";
+        	cin >> students[i].percentage;
+    	}
+    	cout << "Student Details:" << endl;
+    	for (int i = 0; i < N; i++) 
+    	{
+        	cout << "Student " << i + 1 << " Details:" << endl;
+        	cout << "Name: " << students[i].name << endl;
+        	cout << "Roll No: " << students[i].rollNo << endl;
+        	cout << "Gender: " << students[i].gender << endl;
+        	cout << "Percentage: " << students[i].percentage << "%" << endl;
+    	}
+    	return 0;
+}
+

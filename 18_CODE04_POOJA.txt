@@ -1,0 +1,32 @@
+EXPERIMENT 4
+AIM : Program to convert entered character from lower to upper and upper to lower case
+
+CODE:
+
+//Program1 (upper to lowercase)
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main()
+{
+	char arr[] = "ENGINEERING";
+	cout << "Original String: \n" << arr<< endl;
+	cout << "String in lowercase:\n";
+	for (int x=0; x<strlen(arr); x++)
+		putchar(tolower(arr[x]));
+	return 0;
+}
+
+//Program2 (lower to uppercase)
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main()
+{
+	char arr[] = "engineering";
+	cout << "Original String: \n" << arr<< endl;
+	cout << "String in UPPERCASE:\n";
+	for (int x=0; x<strlen(arr); x++)
+		putchar(toupper(arr[x]));
+	return 0;
+}

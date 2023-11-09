@@ -1,0 +1,59 @@
+EXPERIMENT 6
+AIM: Write a program to enter and display elements of 1D and 2D array
+
+CODE:
+
+//Program1(1D ARRAY)
+
+#include <iostream>
+using namespace std;
+int main()
+{
+        int arr[50], num, i;
+        cout<<"\n How Many Elements You Want to Store into an Array? \n";
+        cin>>num;
+        cout<<"\n Enter "<<num<<" Elements to Store into an Array : \n";
+        for(i=0; i<num; i++)
+        {
+                cin>>arr[i];
+        }
+        cout<<"\n The Elements in the Array are : \n";
+        for(i=0; i<num; i++)
+        {
+                cout<<arr[i]<<"\t";
+        }
+        return 0;
+}
+
+
+//Program2(2D ARRAY)
+
+#include<iostream>
+using namespace std;
+int main()
+{
+        int arr[10][10], rows, cols, i, j;
+        cout<<"\n Enter Rows for Array (Max 10) : ";
+        cin>>rows;
+        cout<<"\n Enter Columns for Array (Max 10) : ";
+        cin>>cols;
+        cout<<"\n Enter "<<rows<<"*"<<cols<<" Array Elements : \n";
+        for(i=0; i<rows; i++)
+        {
+                for(j=0; j<cols; j++)
+                {
+                        cout<<" ";
+                        cin>>arr[i][j];
+                }
+        }
+        cout<<"\n Two Dimensional Array is : \n";
+        for(i=0; i<rows; i++)
+        {
+                for(j=0; j<cols; j++)
+                {
+                        cout<<" "<<arr[i][j]<<" ";
+                }
+                cout<<"\n";
+        }
+        return 0;
+}

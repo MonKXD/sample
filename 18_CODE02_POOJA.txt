@@ -1,0 +1,19 @@
+EXPERIMENT 2
+AIM : Program to calculate the area and perimeter of a circle
+
+CODE:
+
+#include <iostream>
+using namespace std;
+#define PI 3.141
+int main()
+{
+	float R, A, P;
+	cout << "Enter Radius of circle\n";
+	cin>> R;
+	A = PI*R*R;
+	P = 2*PI*R;
+	cout << "Area is: \n" << A;
+	cout << "Perimeter is: \n" << P;
+	return 0;
+}
